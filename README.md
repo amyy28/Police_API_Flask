@@ -15,7 +15,7 @@ git clone https://github.com/amyy28/Police_API_Flask.git
 pip3 install -r requirements.txt
 ```
 
-#### Replace API_KEY in the main.py file with your own ready API_KEY
+#### Replace API_KEY in the main.py file with your own ready API_KEY.
 
 ### Now run the flask file
 ```
@@ -24,7 +24,7 @@ python3 app.py
 
 Now hit on the localhost URL and give the location as :
 ```
-/policestations/{location name}
+/policestations/<location name>
 ```
 The API will return the results.
 
