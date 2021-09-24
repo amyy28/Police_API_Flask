@@ -30,3 +30,8 @@ The API will return the results.
 
 #### Below API request can also be checked on Postman.
 
+
+print(mean_squared_error(yy_test, RF_multi.predict(X_test_all)))
+preds = np.stack([t.predict(X_test_all) for t in RF_multi.estimators_])
+preds[:,0], np.mean(preds[:,0]), yy_test
+plt.plot([r2_score(yy_test, np.mean(preds[:i+1], axis=0)) for i in range(100)]);
